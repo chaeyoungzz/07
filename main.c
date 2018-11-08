@@ -4,15 +4,19 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int i=365;
-	int *ptr = &i;
+	int x=10;
+	int y=20;
+	int *ptr;
 	
+	ptr=&x;
+	printf("ptr value = %d\n", *ptr);
 	
-	printf("i address = %d\n", &i);
-    printf("i = %d\n", i);
+	*ptr=20;
+	printf("x value = %d\n", x);
     
-    printf("*ptr = %d\n", *ptr);
-    printf("ptr address = %d\n", ptr);
+    ptr=&y;
+    printf("ptr value = %d\n", *ptr);
+    
     
 	return 0;
 }
